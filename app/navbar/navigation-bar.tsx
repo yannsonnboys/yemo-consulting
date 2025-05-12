@@ -51,6 +51,31 @@ const components: { title: string; description: string; href: string }[] = [
   // },
 ];
 
+const softwareEngineering: {
+  title: string;
+  description: string;
+  href: string;
+}[] = [
+  {
+    title: "Software as a Service (SaaS)",
+    description:
+      "Recommended template for most use cases. Includes all the components you need to get started.",
+    href: "/",
+  },
+  {
+    title: "Web Development (WD)",
+    description:
+      "A template with a minimal set of components. Use this template if you want to build your own components.",
+    href: "/",
+  },
+  {
+    title: "Mobile Development (MD)",
+    description:
+      "Advanced template with more components and features. Use this template if you want to build a complex UI.",
+    href: "/",
+  },
+];
+
 function NavigationBar() {
   return (
     <NavigationMenu>
@@ -80,21 +105,28 @@ function NavigationBar() {
                 </NavigationMenuLink>
               </li>
 
-              <ListItem href="/docs" title="Data Science (DS)">
+              <ListItem href="#" title="Data Science (DS)">
                 Re-usable components built using Radix UI and Tailwind CSS.
               </ListItem>
-              <ListItem href="/docs" title="Machine Learning (ML)">
+              <ListItem href="#" title="Machine Learning (ML)">
                 How to install dependencies and structure your app.
               </ListItem>
-              <ListItem href="/docs" title="Artificial Intelligence (AI)">
+              <ListItem
+                href="#"
+                title="Generative Artificial Intelligence (GenAI)"
+              >
                 Styles for headings, paragraphs, lists...etc
               </ListItem>
-              <ListItem href="/docs" title="Cloud Computing (CC)">
+              <ListItem href="#" title="Artificial Intelligence (AI)">
+                Styles for headings, paragraphs, lists...etc
+              </ListItem>
+
+              {/* <ListItem href="/docs" title="Cloud Computing (CC)">
                 Styles for headings, paragraphs, lists...etc
               </ListItem>
               <ListItem href="/docs" title="Computer Vision (CV)">
                 Styles for headings, paragraphs, lists...etc
-              </ListItem>
+              </ListItem> */}
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
@@ -115,10 +147,10 @@ function NavigationBar() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Projects</NavigationMenuTrigger>
+          <NavigationMenuTrigger>Sofware Engineering</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-              {components.map((component) => (
+              {softwareEngineering.map((component) => (
                 <ListItem
                   key={component.title}
                   title={component.title}
