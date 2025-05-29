@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import Link from "next/link";
+// import Link from "next/link";
 import { cn } from "@/lib/utils";
 import {
   NavigationMenu,
@@ -12,8 +12,50 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 import Logo from "./logo";
+import { Mailbox, MailIcon } from "lucide-react";
+import { BsEnvelopeFill, BsPhone, BsYoutube } from "react-icons/bs";
 
-const components: { title: string; description: string; href: string }[] = [
+const technologies: { title: string; description: string; href: string }[] = [
+  {
+    title: "Data Science (DS)",
+    description:
+      "We apply Data Science techniques to help you make Smarter Decisions, Solve Really Tricky Problems, Understand and Interpret your data and Predict the future outcomes for your business.",
+    href: "/",
+  },
+  {
+    title: "Machine Learning (ML)",
+    description:
+      "We apply Machine Learning techniques to help you Solving Problems that are too complex, Automating Tasks and Making them Super Efficient, Handling Massive and Ever-Changing Data for your business.",
+    href: "/",
+  },
+  {
+    title: "Artificial Intelligence (AI)",
+    description:
+      "We apply Artificial Intelligence techniques to help you with Automation and Efficiency, Enhanced Decision-Making and Insights, Solving Complex Problems, and Improving the Daily Productivity for your business.",
+    href: "/",
+  },
+  {
+    title: "Generative AI (GenAI)",
+    description:
+      "We apply Artificial Intelligence techniques to help you with Supercharging Creativity and Innovation, Boosting Efficiency and Productivity, Solving Complex Problems and Generating Insights for your business.",
+    href: "/",
+  },
+
+  // {
+  //   title: "Computer Vision (CV)",
+  //   description:
+  //     "Advanced template with more components and features. Use this template if you want to build a complex UI.",
+  //   href: "/",
+  // },
+  // {
+  //   title: "Cloud Computing (CC)",
+  //   description:
+  //     "Recommended template for most use cases. Includes all the components you need to get started.",
+  //   href: "/",
+  // },
+];
+
+const businesses: { title: string; description: string; href: string }[] = [
   {
     title: "Business Analytics (BA)",
     description:
@@ -32,23 +74,12 @@ const components: { title: string; description: string; href: string }[] = [
       "Advanced template with more components and features. Use this template if you want to build a complex UI.",
     href: "/",
   },
-  // {
-  //   title: "Amber",
-  //   description: "Great for building a marketing or landing page.",
-  //   href: "/",
-  // },
-  // {
-  //   title: "Tide",
-  //   description:
-  //     "Layered template with a sidebar navigation. Great for building a dashboard or admin panel.",
-  //   href: "/",
-  // },
-  // {
-  //   title: "Mint",
-  //   description:
-  //     "Nice template for building a blog or a content-heavy website.",
-  //   href: "/",
-  // },
+  {
+    title: "Business Collaboration (BC)",
+    description:
+      "We offer Local and International Partnerships, with organizations from different locations to achieve and share goals.",
+    href: "/",
+  },
 ];
 
 const softwareEngineering: {
@@ -59,13 +90,50 @@ const softwareEngineering: {
   {
     title: "Software as a Service (SaaS)",
     description:
+      "We develop AI-Powered SaaS Solutions for your organization and business.",
+    href: "/",
+  },
+  {
+    title: "Mobile Development (MD)",
+    description:
+      "We develop AI-Powered Apps and Mobile App Solutions for your organization and business.",
+    href: "/",
+  },
+];
+
+const projects: {
+  title: string;
+  description: string;
+  href: string;
+}[] = [
+  {
+    title: "Data Science (DS)",
+    description:
       "Recommended template for most use cases. Includes all the components you need to get started.",
     href: "/",
   },
   {
-    title: "Web Development (WD)",
+    title: "Machine Learning (ML)",
     description:
       "A template with a minimal set of components. Use this template if you want to build your own components.",
+    href: "/",
+  },
+  {
+    title: "Artificial Intelligence (AI)",
+    description:
+      "Advanced template with more components and features. Use this template if you want to build a complex UI.",
+    href: "/",
+  },
+  {
+    title: "Generative Artificial Intelligence (GenAI)",
+    description:
+      "Advanced template with more components and features. Use this template if you want to build a complex UI.",
+    href: "/",
+  },
+  {
+    title: "Software as a Service (SaaS)",
+    description:
+      "Recommended template for most use cases. Includes all the components you need to get started.",
     href: "/",
   },
   {
@@ -81,9 +149,9 @@ function NavigationBar() {
     <NavigationMenu>
       <NavigationMenuList className="hidden md:flex md:space-x-4">
         <NavigationMenuItem>
-          <NavigationMenuTrigger>New Technology</NavigationMenuTrigger>
+          <NavigationMenuTrigger>About Us</NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+            <ul className="grid gap-3 p-4 md:w-[600px] lg:w-[700px] ]">
               <li className="row-span-3">
                 <NavigationMenuLink asChild>
                   <a
@@ -95,16 +163,86 @@ function NavigationBar() {
                       Yemo Consulting
                     </div>
                     <p className="text-sm leading-tight text-muted-foreground">
-                      Is a consulting company that helps business save{" "}
-                      <strong>Costs</strong> and <strong>Gain Profits</strong>{" "}
-                      (revenue growth) by using <strong>New Technology</strong>{" "}
-                      and <strong>Business Strategy</strong>. For this reason,
-                      we offer our services in different area like:
+                      is a consulting company in{" "}
+                      <strong>Business Analytics (BA)</strong> and{" "}
+                      <strong>Artificial Intelligence (AI)</strong>, that helps
+                      Organizations, <strong>Founders</strong> and{" "}
+                      <strong>Executives</strong> achieve their{" "}
+                      <strong>business goals</strong> in cost savings and
+                      Revenue Growth that leads to{" "}
+                      <strong>Higher Profits</strong>.
+                      <br />
+                      <br />
+                      We provide our expertise in the field of Data Science{" "}
+                      <strong>(DS)</strong>, Machine Learning{" "}
+                      <strong>(ML)</strong>, Artificial Intelligence{" "}
+                      <strong>(AI)</strong>, and Generative Artificial
+                      Intelligence <strong>(GenAI)</strong>
+                      .
+                      <br />
+                      <br />
+                      We also develop{" "}
+                      <strong>AI-Powered Software Solutions</strong> for
+                      Businesses.
                     </p>
                   </a>
                 </NavigationMenuLink>
               </li>
+              <hr />
+              <li className="row-span-3">
+                <NavigationMenuLink asChild>
+                  <a
+                    className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+                    href="/"
+                  >
+                    {/* <Logo /> */}
+                    <div className="mb-2 mt-2 text-lg font-medium">
+                      Contact Us
+                    </div>
+                    <p className="text-sm leading-tight text-muted-foreground mb-2">
+                      For any questions or inquiries, please don't hesitate to
+                      contact us.
+                    </p>
 
+                    <p className="flex gap-2 text-sm leading-tight text-muted-foreground">
+                      <BsEnvelopeFill />
+                      yemo.yannick@gmail.com
+                    </p>
+                    {/* <p className="flex gap-2 text-sm leading-tight text-muted-foreground">
+                      <BsPhone />
+                      +1 (123) 456-7890
+                    </p> */}
+                    <p className="flex gap-2 text-sm leading-tight text-muted-foreground">
+                      <BsYoutube />
+                      <a
+                        href="https://www.youtube.com/@yemoconsulting"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Yemo Consulting
+                      </a>
+                    </p>
+                  </a>
+                </NavigationMenuLink>
+              </li>
+            </ul>
+          </NavigationMenuContent>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <NavigationMenuTrigger>Tech Fields</NavigationMenuTrigger>
+          <NavigationMenuContent>
+            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
+              {technologies.map((technology) => (
+                <ListItem
+                  key={technology.title}
+                  title={technology.title}
+                  href={technology.href}
+                >
+                  {technology.description}
+                </ListItem>
+              ))}
+            </ul>
+            {/* <ul className="grid gap-3 p-4 md:w-[600px] lg:w-[700px] lg:grid-cols-[.75fr_1fr]">
               <ListItem href="#" title="Data Science (DS)">
                 Re-usable components built using Radix UI and Tailwind CSS.
               </ListItem>
@@ -121,26 +259,27 @@ function NavigationBar() {
                 Styles for headings, paragraphs, lists...etc
               </ListItem>
 
-              {/* <ListItem href="/docs" title="Cloud Computing (CC)">
-                Styles for headings, paragraphs, lists...etc
-              </ListItem>
               <ListItem href="/docs" title="Computer Vision (CV)">
                 Styles for headings, paragraphs, lists...etc
-              </ListItem> */}
-            </ul>
+              </ListItem>
+
+              <ListItem href="/docs" title="Cloud Computing (CC)">
+                Styles for headings, paragraphs, lists...etc
+              </ListItem>
+            </ul> */}
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuTrigger>Business Strategy</NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-              {components.map((component) => (
+            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
+              {businesses.map((business) => (
                 <ListItem
-                  key={component.title}
-                  title={component.title}
-                  href={component.href}
+                  key={business.title}
+                  title={business.title}
+                  href={business.href}
                 >
-                  {component.description}
+                  {business.description}
                 </ListItem>
               ))}
             </ul>
@@ -150,22 +289,33 @@ function NavigationBar() {
           <NavigationMenuTrigger>Sofware Engineering</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-              {softwareEngineering.map((component) => (
+              {softwareEngineering.map((softeng) => (
                 <ListItem
-                  key={component.title}
-                  title={component.title}
-                  href={component.href}
+                  key={softeng.title}
+                  title={softeng.title}
+                  href={softeng.href}
                 >
-                  {component.description}
+                  {softeng.description}
                 </ListItem>
               ))}
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/docs" legacyBehavior passHref>
-            <NavigationMenuLink>Pricing</NavigationMenuLink>
-          </Link>
+          <NavigationMenuTrigger>Projects</NavigationMenuTrigger>
+          <NavigationMenuContent>
+            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+              {projects.map((project) => (
+                <ListItem
+                  key={project.title}
+                  title={project.title}
+                  href={project.href}
+                >
+                  {project.description}
+                </ListItem>
+              ))}
+            </ul>
+          </NavigationMenuContent>
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>

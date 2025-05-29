@@ -1,5 +1,18 @@
-import { Button } from "@/components/ui/button";
 import React from "react";
+import { Copy } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import {
+  Dialog,
+  DialogClose,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 
 function FirstSection() {
   return (
@@ -16,9 +29,47 @@ function FirstSection() {
           <hr className="my-2" />
         </div>
         <div className="flex justify-center gap-4 pt-5">
-          <Button className="bg-blue-500 text-white px-10 py-6 rounded-md text-lg font-bold hover:bg-blue-600">
-            Contact Us.
-          </Button>
+          <div className="bg-blue-500 text-white px-10 py-1.5 rounded-md text-lg font-bold hover:bg-blue-600">
+            <Dialog>
+              <DialogTrigger asChild>
+                <Button variant="outline" className="text-blue-500 text-lg">
+                  Contact Us.
+                </Button>
+              </DialogTrigger>
+              <DialogContent className="sm:max-w-md">
+                <DialogHeader>
+                  <DialogTitle>Contact Us.</DialogTitle>
+                  <DialogDescription>
+                    Contact us now by copying this email address and we'll get
+                    back to you as soon as possible.
+                  </DialogDescription>
+                </DialogHeader>
+                <div className="flex items-center space-x-2">
+                  <div className="grid flex-1 gap-2">
+                    <Label htmlFor="email" className="sr-only">
+                      Email
+                    </Label>
+                    <Input
+                      id="email"
+                      defaultValue="yemo.yannick@gmail.com"
+                      readOnly
+                    />
+                  </div>
+                  <Button type="submit" size="sm" className="px-3">
+                    <span className="sr-only">Copy</span>
+                    <Copy />
+                  </Button>
+                </div>
+                <DialogFooter className="sm:justify-start">
+                  <DialogClose asChild>
+                    <Button type="button" variant="secondary">
+                      Close
+                    </Button>
+                  </DialogClose>
+                </DialogFooter>
+              </DialogContent>
+            </Dialog>
+          </div>
           <Button className="bg-gray-600 text-white px-10 py-6 rounded-md text-lg font-bold hover:bg-gray-700">
             Learn More.
           </Button>

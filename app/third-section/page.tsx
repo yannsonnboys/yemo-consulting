@@ -13,21 +13,21 @@ function TherdSection() {
 
         <div className="flex-col border p-4 rounded-xl md:w-2/5">
           <div className="text-3xl flex justify-center text-center md:text-4xl font-bold pb-5 bg-gradient-to-r from-yellow-500 to-blue-300 bg-clip-text text-transparent">
-            ThirdSection
+            Business Strategy
+          </div>
+          <div className="text-center text-xl gap-2">
+            We provide our expertise in
           </div>
           <div className="md:px-20 space-y-6 flex-col items-center justify-center">
             <div className="text-lg pt-10 flex gap-4">
               <Image
-                src="/images/icon-analytics.png"
+                src="/images/icon-shield.png"
                 alt="icon-analytics"
                 width={50}
                 height={50}
                 className="object-contain items-center justify-center flex"
               />
-              <div className="flex flex-col gap-2">
-                Analytics Analytics Analytics Analytics Analytics Analytics
-                Analytics
-              </div>
+              <div className="flex flex-col gap-2">Business Analytics (BA)</div>
             </div>
 
             <div className="flex-col">
@@ -39,39 +39,34 @@ function TherdSection() {
                   height={50}
                   className="object-contain items-center justify-center flex"
                 />
-                <div className="">
-                  Cloud Cloud Cloud Cloud Cloud Cloud Cloud
-                </div>
+                <div className="">Business Communication (BC)</div>
               </div>
             </div>
 
             <div className="flex-col">
               <div className="text-lg flex items-center gap-5">
                 <Image
-                  src="/images/icon-signal.png"
+                  src="/images/icon-store.png"
                   alt="icon-signal"
                   width={50}
                   height={50}
                   className="object-contain items-center justify-center flex"
                 />
-                <div className="">
-                  Cloud Cloud Cloud Cloud Cloud Cloud Cloud
-                </div>
+                <div className="">Starting New Busines (SNB)</div>
               </div>
             </div>
 
             <div className="flex-col">
               <div className="text-lg flex items-center gap-5">
                 <Image
-                  src="/images/icon-template.png"
+                  src="/images/icon-location.png"
                   alt="icon-template"
                   width={50}
                   height={50}
                   className="object-contain items-center justify-center flex"
                 />
-                <div className="">
-                  Cloud Cloud Cloud Cloud Cloud Cloud Cloud
-                </div>
+                {/* Local and international partnerships, also known as collaborations, involve organizations from different locations working together to achieve shared goals. */}
+                <div className="">Business Collaboration (BC) </div>
               </div>
             </div>
           </div>

@@ -34,7 +34,7 @@ function Pricing() {
         </div>
       </div>
 
-      <div className="md:flex">
+      {/* <div className="md:flex">
         {features.map((feature, index) => (
           <div key={index} className="p-4">
             <div className="grid justify-center items-center border rounded-xl gap-2 p-4 ">
@@ -51,7 +51,7 @@ function Pricing() {
             </div>
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 }

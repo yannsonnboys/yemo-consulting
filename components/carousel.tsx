@@ -81,9 +81,9 @@ function Carousel() {
   return (
     <div>
       <div className="m-5 text-center justify-center flex text-3xl font-bold md:pb-10 px-10 bg-gradient-to-r from-blue-500 to-green-300 bg-clip-text text-transparent">
-        We are the "Doctor" of your "Sick Business". We look into your
-        business's data and tell you what is going wrong with your business.
-        That is why we are trusted by many businesses to fufill their needs.
+        We are the "Doctors" of your "Business". We look into your business's
+        data and tell you what is going wrong. That is why we are trusted by
+        many businesses to fufill their needs.
       </div>
       <div className=" items-center justify-between grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 p-4 ">
         <AnimatePresence custom={currentImageIndex}>

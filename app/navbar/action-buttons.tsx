@@ -27,7 +27,8 @@ function ActionButtons() {
               <hr />
               <SheetDescription>
                 <div className="flex flex-col space-y-2 items-start text-lg text-black mt-5">
-                  <Link href="/getstarted">New Technology</Link>
+                  <Link href="/getstarted">About Us</Link>
+                  <Link href="/getstarted">Technology Fields</Link>
                   <Link href="/services">Business Strategy</Link>
                   <Link href="/pricing">Projects</Link>
                   <Link href="/blog">Pricing</Link>
