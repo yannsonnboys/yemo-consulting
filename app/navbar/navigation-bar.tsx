@@ -40,19 +40,18 @@ const technologies: { title: string; description: string; href: string }[] = [
       "We apply Artificial Intelligence techniques to help you with Supercharging Creativity and Innovation, Boosting Efficiency and Productivity, Solving Complex Problems and Generating Insights for your business.",
     href: "/",
   },
-
-  // {
-  //   title: "Computer Vision (CV)",
-  //   description:
-  //     "Advanced template with more components and features. Use this template if you want to build a complex UI.",
-  //   href: "/",
-  // },
-  // {
-  //   title: "Cloud Computing (CC)",
-  //   description:
-  //     "Recommended template for most use cases. Includes all the components you need to get started.",
-  //   href: "/",
-  // },
+  {
+    title: "Computer Vision (CV)",
+    description:
+      "We apply Computer Vision techniques to help you develop systems that can analyze and interpret visual data, by enabling computers to see and understand the visual world, just like humans do. It involves developing algorithms that can analyze digital images and videos,recognize objects and features, and extract meaningful information from the visual data.",
+    href: "/",
+  },
+  {
+    title: "Cloud Computing (CC)",
+    description:
+      "We apply Cloud Computing techniques to help you design your software and infrastructure to meet the needs of your business, whether it's in the cloud or on-premises.",
+    href: "/",
+  },
 ];
 
 const businesses: { title: string; description: string; href: string }[] = [
@@ -108,38 +107,42 @@ const projects: {
 }[] = [
   {
     title: "Data Science (DS)",
-    description:
-      "Recommended template for most use cases. Includes all the components you need to get started.",
+    description: "Coming Soon...",
     href: "/",
   },
   {
     title: "Machine Learning (ML)",
-    description:
-      "A template with a minimal set of components. Use this template if you want to build your own components.",
+    description: "Coming Soon...",
     href: "/",
   },
   {
     title: "Artificial Intelligence (AI)",
-    description:
-      "Advanced template with more components and features. Use this template if you want to build a complex UI.",
+    description: "Coming Soon...",
     href: "/",
   },
   {
     title: "Generative Artificial Intelligence (GenAI)",
-    description:
-      "Advanced template with more components and features. Use this template if you want to build a complex UI.",
+    description: "Coming Soon...",
     href: "/",
   },
   {
     title: "Software as a Service (SaaS)",
-    description:
-      "Recommended template for most use cases. Includes all the components you need to get started.",
+    description: "Coming Soon...",
     href: "/",
   },
   {
     title: "Mobile Development (MD)",
-    description:
-      "Advanced template with more components and features. Use this template if you want to build a complex UI.",
+    description: "Coming Soon...",
+    href: "/",
+  },
+  {
+    title: "Computer Vision (CV)",
+    description: "Coming Soon...",
+    href: "/",
+  },
+  {
+    title: "Cloud Computing (CC)",
+    description: "Coming Soon...",
     href: "/",
   },
 ];
