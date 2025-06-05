@@ -29,29 +29,29 @@ const technologies: { title: string; description: string; href: string }[] = [
     href: "/",
   },
   {
-    title: "Artificial Intelligence (AI)",
-    description:
-      "We apply Artificial Intelligence techniques to help you with Automation and Efficiency, Enhanced Decision-Making and Insights, Solving Complex Problems, and Improving the Daily Productivity for your business.",
-    href: "/",
-  },
-  {
     title: "Generative AI (GenAI)",
     description:
       "We apply Artificial Intelligence techniques to help you with Supercharging Creativity and Innovation, Boosting Efficiency and Productivity, Solving Complex Problems and Generating Insights for your business.",
     href: "/",
   },
-  {
-    title: "Computer Vision (CV)",
-    description:
-      "We apply Computer Vision techniques to help you develop systems that can analyze and interpret visual data, by enabling computers to see and understand the visual world, just like humans do. It involves developing algorithms that can analyze digital images and videos,recognize objects and features, and extract meaningful information from the visual data.",
-    href: "/",
-  },
-  {
-    title: "Cloud Computing (CC)",
-    description:
-      "We apply Cloud Computing techniques to help you design your software and infrastructure to meet the needs of your business, whether it's in the cloud or on-premises.",
-    href: "/",
-  },
+  //  {
+  //   title: "Artificial Intelligence (AI)",
+  //   description:
+  //     "We apply Artificial Intelligence techniques to help you with Automation and Efficiency, Enhanced Decision-Making and Insights, Solving Complex Problems, and Improving the Daily Productivity for your business.",
+  //   href: "/",
+  // },
+  // {
+  //   title: "Computer Vision (CV)",
+  //   description:
+  //     "We apply Computer Vision techniques to help you develop systems that can analyze and interpret visual data, by enabling computers to see and understand the visual world, just like humans do. It involves developing algorithms that can analyze digital images and videos,recognize objects and features, and extract meaningful information from the visual data.",
+  //   href: "/",
+  // },
+  // {
+  //   title: "Cloud Computing (CC)",
+  //   description:
+  //     "We apply Cloud Computing techniques to help you design your software and infrastructure to meet the needs of your business, whether it's in the cloud or on-premises.",
+  //   href: "/",
+  // },
 ];
 
 const businesses: { title: string; description: string; href: string }[] = [
@@ -115,11 +115,11 @@ const projects: {
     description: "Coming Soon...",
     href: "/",
   },
-  {
-    title: "Artificial Intelligence (AI)",
-    description: "Coming Soon...",
-    href: "/",
-  },
+  // {
+  //   title: "Artificial Intelligence (AI)",
+  //   description: "Coming Soon...",
+  //   href: "/",
+  // },
   {
     title: "Generative Artificial Intelligence (GenAI)",
     description: "Coming Soon...",
@@ -135,16 +135,16 @@ const projects: {
     description: "Coming Soon...",
     href: "/",
   },
-  {
-    title: "Computer Vision (CV)",
-    description: "Coming Soon...",
-    href: "/",
-  },
-  {
-    title: "Cloud Computing (CC)",
-    description: "Coming Soon...",
-    href: "/",
-  },
+  // {
+  //   title: "Computer Vision (CV)",
+  //   description: "Coming Soon...",
+  //   href: "/",
+  // },
+  // {
+  //   title: "Cloud Computing (CC)",
+  //   description: "Coming Soon...",
+  //   href: "/",
+  // },
 ];
 
 function NavigationBar() {
@@ -166,21 +166,19 @@ function NavigationBar() {
                       Yemo Consulting
                     </div>
                     <p className="text-sm leading-tight text-muted-foreground">
-                      is a consulting company in{" "}
-                      <strong>Business Analytics (BA)</strong> and{" "}
-                      <strong>Artificial Intelligence (AI)</strong>, that helps
-                      Organizations, <strong>Founders</strong> and{" "}
-                      <strong>Executives</strong> achieve their{" "}
-                      <strong>business goals</strong> in cost savings and
-                      Revenue Growth that leads to{" "}
+                      is a consulting company that helps{" "}
+                      <strong>Organizations</strong>, <strong>Founders</strong>{" "}
+                      and <strong>Executives</strong> achieve their{" "}
+                      <strong>business goals</strong> in{" "}
+                      <strong>Cost Saving</strong> and{" "}
+                      <strong>Revenue Growth</strong> that leads to{" "}
                       <strong>Higher Profits</strong>.
                       <br />
                       <br />
-                      We provide our expertise in the field of Data Science{" "}
-                      <strong>(DS)</strong>, Machine Learning{" "}
-                      <strong>(ML)</strong>, Artificial Intelligence{" "}
-                      <strong>(AI)</strong>, and Generative Artificial
-                      Intelligence <strong>(GenAI)</strong>
+                      We provide our expertise in the field of{" "}
+                      <strong>Data Science (DS)</strong>,{" "}
+                      <strong>Machine Learning (ML)</strong>, and{" "}
+                      <strong>Generative AI (GenAI)</strong>
                       .
                       <br />
                       <br />
